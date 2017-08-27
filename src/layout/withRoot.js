@@ -28,10 +28,7 @@ AppWrapper = withStyles(styleSheet)(AppWrapper);
 const context = createContext();
 
 function withRoot(BaseComponent) {
-  if (BaseComponent.MuiThemed) {
-    //return BaseComponent;
-  }
-
+  
   class WithRoot extends Component {
     componentDidMount() {
       // Remove the server-side injected CSS.
@@ -42,17 +39,6 @@ function withRoot(BaseComponent) {
       }
     }
 
-    /*render() {
-      return (
-        <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
-          <MuiThemeProvider theme={context.theme} sheetsManager={context.sheetsManager}>
-            <AppWrapper>
-              <BaseComponent {...this.props} />
-            </AppWrapper>
-          </MuiThemeProvider>
-        </JssProvider>
-      );
-    }*/
     render() {
       return (
         <MuiThemeProvider
@@ -68,7 +54,6 @@ function withRoot(BaseComponent) {
   }
 
   WithRoot.displayName = `withRoot(${BaseComponent.displayName})`;
-  //WithRoot.MuiThemed = true;
 
   return WithRoot;
 }
