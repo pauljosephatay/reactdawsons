@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,UAEE,kBACA,SACA,UACA,gBAAiB,CAGnB,mBAPE,WAAY","file":"static/css/main.b24eaa18.css","sourcesContent":["html, body {\n  height:100%;\n  position: relative;\n  margin: 0;\n  padding: 0;\n  overflow: visible\n}\n\ndiv#root {\n  height:100%;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
